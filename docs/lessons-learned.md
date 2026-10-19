@@ -18,3 +18,9 @@
 
 - The `security-audit-runner` skill carries a shell script under `skills/security-audit-runner/scripts/`. The `npx skills` layout tolerates extra files next to `SKILL.md`; the script must be `chmod +x` and referenced with paths relative to the skill root (`$SCRIPT_DIR`).
 - When a script that once lived in a standalone repo is converted into a skill, the script's default "project root" must change. `$SCRIPT_DIR/..` no longer points at the target project once the script sits in `skills/<name>/scripts/`; default to `$PWD` instead and keep an explicit `TARGET` override.
+
+## Bug skills imported from malthaus-app
+
+- `bug-hunter`, `bug-solution-planner`, and `bug-implementer` were copied verbatim from the malthaus-app project (`malthaus-app/.agents/skills/`) and are kept as-is here.
+- They are intentionally project-coupled: Malthaus email branding and recipient, the `POST $PUBLIC_API_BASE_URL/notifications/email` + `$CUBIQ_API_KEY` transport, SvelteKit scope paths, `npm run check`, and the Tauri version-bump rule. Each project that installs them must adapt those specifics.
+- Shared `.bugs/` domain: `BUGS.md` is owned by `bug-hunter` (only it adds/ticks bugs), `SOLUTIONS.md` indexes `solutions/SOLUTION-NNN.md` proposals, and `bug-implementer` applies exactly one approved solution after explicit operator approval.
