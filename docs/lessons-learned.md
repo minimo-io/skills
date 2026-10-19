@@ -12,6 +12,8 @@
 
 - For the `npx skills` CLI to discover and install individual skills, each skill folder must sit under a top-level `skills/` container, one level deep: `skills/<skill-name>/SKILL.md`. This matches the cloudflare/security-audit-skill layout.
 - Users install one skill at a time: `npx skills add <repo> --skill <name>`.
+- Install URLs in `README.md` must point to the canonical repo `https://github.com/minimo-io/skills`. The legacy `borumbombum/skills` repo is stale and misses recent skills.
+- This repo has no version file, tags, or bump convention. Do not add a version-bump mechanism; commit changes without a bump.
 - Pushing to GitHub failed over SSH (unrecognized identity). Fixed by switching the remote to HTTPS (`git@github.com:...` → `https://github.com/...`) so `gh`'s credentials are used.
 
 ## Skills can bundle executable scripts

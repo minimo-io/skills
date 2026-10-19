@@ -20,14 +20,14 @@ Skills, skills, skills for harnessing these things.
 Install a single skill with the [Skills CLI](https://skills.sh):
 
 ```bash
-npx skills add https://github.com/borumbombum/skills --skill tasks
-npx skills add https://github.com/borumbombum/skills --skill git-commit-workflow
-npx skills add https://github.com/borumbombum/skills --skill borum-writer
-npx skills add https://github.com/borumbombum/skills --skill security-audit-runner
-npx skills add https://github.com/borumbombum/skills --skill youtube-search
-npx skills add https://github.com/borumbombum/skills --skill bug-hunter
-npx skills add https://github.com/borumbombum/skills --skill bug-solution-planner
-npx skills add https://github.com/borumbombum/skills --skill bug-implementer
+npx skills add https://github.com/minimo-io/skills --skill tasks
+npx skills add https://github.com/minimo-io/skills --skill git-commit-workflow
+npx skills add https://github.com/minimo-io/skills --skill borum-writer
+npx skills add https://github.com/minimo-io/skills --skill security-audit-runner
+npx skills add https://github.com/minimo-io/skills --skill youtube-search
+npx skills add https://github.com/minimo-io/skills --skill bug-hunter
+npx skills add https://github.com/minimo-io/skills --skill bug-solution-planner
+npx skills add https://github.com/minimo-io/skills --skill bug-implementer
 ```
 
 Add `--global` for a user-level installation.
